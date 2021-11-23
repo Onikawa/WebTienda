@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!------ BootStrap | JS ---------->
-
+<!------ BootStrap | JS ---------->
         <%@include file="WEB-INF/jspf/Styles.jspf" %>
         <!------ Estilos CSS ---------->                    
         <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/>   
