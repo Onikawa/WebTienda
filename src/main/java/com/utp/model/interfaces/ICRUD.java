@@ -8,10 +8,9 @@ public interface ICRUD<T> {
 
     public T selectById(String id);
 
-//    public void insert(T t);
-//
-//    public void update(T t);
-//
-//    public void delete(String id);
+    public void insert(T t);
 
+    public void update(T t);
+
+//    public void delete(String id);
 }

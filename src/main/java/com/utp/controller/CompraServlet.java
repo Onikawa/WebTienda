@@ -159,7 +159,7 @@ public class CompraServlet extends HttpServlet {
         request.setAttribute("total", tot);
         ses.setAttribute("cliente", cli);
         ses.setAttribute("canasta", null);
-
+         
         String pag = "/Resumen.jsp";
         request.getRequestDispatcher(pag).forward(request, response);
 

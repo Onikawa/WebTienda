@@ -50,5 +50,15 @@ public class CategoriaDAO implements ICRUD<Categoria> {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
+    public void insert(Categoria t) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void update(Categoria t) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 
 }

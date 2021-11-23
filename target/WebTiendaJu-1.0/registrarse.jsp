@@ -28,12 +28,12 @@
                                 <h2 class="text-muted text-center">REGISTRARSE</h2> 
                                 <div class="container">
                                     <div class="form-group">
-                                        <label>NOMBRE</label>
-                                        <input type="text" name="nombre" class="form-control form-control-lg" placeholder="nombre compledo"/>
+                                        <label>NOMBRES </label>
+                                        <input type="text" name="nombre" class="form-control form-control-lg" placeholder="Apeliidos y Nombres"/>
                                     </div>
                                     <div class="form-group">
-                                        <label>APELLIDO</label>
-                                        <input type="text" name="apellido" class="form-control form-control-lg" placeholder="apeliidos"/>
+                                        <label>EMAIL</label>
+                                        <input type="text" name="apellido" class="form-control form-control-lg" placeholder="Email"/>
                                     </div>
                                     <div class="form-group">
                                         <label>DNI</label>
