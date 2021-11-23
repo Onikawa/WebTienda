@@ -9,6 +9,7 @@
         <!------ BootStrap | JS ---------->
 
         <%@include file="WEB-INF/jspf/Styles.jspf" %>
+        <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/>   
         <!------ Estilos CSS ---------->                    
         <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/>   
     </head>
