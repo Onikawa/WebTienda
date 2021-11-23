@@ -12,6 +12,7 @@
         <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/>   
         <!------ Estilos CSS ---------->                    
         <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/>   
+         <link href="Resources/css/Index.css" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
         <%@include file="WEB-INF/jspf/cheader.jspf" %>
