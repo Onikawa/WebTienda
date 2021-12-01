@@ -23,8 +23,8 @@
                 <div class="col-md-4 d-flex">
                     <div class="align-self-center card login__card shadow-sm w-100">
                         <div class="card-body">
-                            <form action="" method="post">
-                                <input type="hidden" name="accion" value="IngresarAdmin">
+                            <form action="ClienteServlet" method="POST">
+
                                 <h2 class="text-muted text-center">REGISTRARSE</h2> 
                                 <div class="container">
                                     <div class="form-group">
@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>EMAIL</label>
-                                        <input type="text" name="apellido" class="form-control form-control-lg" placeholder="Email"/>
+                                        <input type="text" name="Email" class="form-control form-control-lg" placeholder="Email"/>
                                     </div>
                                     <div class="form-group">
                                         <label>DNI</label>
@@ -44,8 +44,8 @@
                                         <input type="password" name="passAdmin" class="form-control form-control-lg"placeholder="Ingresar contraseña"/>
                                     </div>
                                     <div class="form-group">
-
-                                        <input type="submit" class="btn btn-outline-dark btn-block"> <br> <br>   
+                                <input type="submit" name="accion" value="Registrase" class="btn btn-outline-dark btn-block"> <br> <br>   
+                                       
 
                                     </div>
                                     <div class="form-group">

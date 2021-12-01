@@ -35,7 +35,7 @@ public class ClienteServlet extends HttpServlet {
             case "Registrase":
                 NuevoCliente(request, response);
                 break;
-            
+
         }
     }
 
@@ -64,9 +64,16 @@ public class ClienteServlet extends HttpServlet {
         }
     }
 
-   
+    private void NuevoCliente(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
 
-    private void NuevoCliente(HttpServletRequest request, HttpServletResponse response) {
+        cli.setNom(request.getParameter("nombre"));
+        cli.setDni(request.getParameter("Email"));
+        cli.setCorreo(request.getParameter("dni"));
+        cli.setClave(request.getParameter("passAdmin"));
+        obj.insert(cli);
+        String pagina = "/Login.jsp";
+        request.getRequestDispatcher(pagina).forward(request, response);
 
     }
 

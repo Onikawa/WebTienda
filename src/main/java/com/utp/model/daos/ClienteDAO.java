@@ -10,6 +10,7 @@ public class ClienteDAO implements IClienteService {
 
     Conexion cn = new Conexion();
     Connection con;
+     CallableStatement cs;
     PreparedStatement ps;
     ResultSet rs;
 
@@ -62,8 +63,28 @@ public class ClienteDAO implements IClienteService {
     }
 
     @Override
-    public void insert(Cliente t) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void insert(Cliente a) {
+            
+     
+        String sql = "{call SP_AdicionCliente(?,?,?,?)}";
+        try {
+              con = Conexion.Conexion();
+            cs = con.prepareCall(sql);
+            cs.setString(1, a.getNom() );
+            cs.setString(2, a.getDni());
+            cs.setString(3, a.getCorreo());
+            cs.setString(4, a.getClave());
+            rs = cs.executeQuery();
+        } catch (Exception e) {
+        } finally {
+            try {
+                if (con != null) {
+                    con.close();
+                }
+            } catch (SQLException e2) {
+            }
+        }
+    }
     }
 
-}
+
